@@ -1,64 +1,31 @@
 import React from "react";
-import Single from "../assets/single.png";
-import Double from "../assets/double.png";
-import Triple from "../assets/triple.png";
+import Slider from "./Slider";
 
 const Cards = () => {
+  // this page is dedicated to channels section
   return (
-    <div className="w-full py-[10rem] px-4 bg-white">
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
-        <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem] bg-white"
-            src={Single}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-          <p className="text-center text-4xl font-bold">$149</p>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-8">500 GB Storage</p>
-            <p className="py-2 border-b mx-8">1 Granted User</p>
-            <p className="py-2 border-b mx-8">Send up to 2 GB</p>
-          </div>
-          <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 hover:scale-105 duration-300 ease-in-out">
-            Start Trial
-          </button>
-        </div>
-        <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem] bg-transparent"
-            src={Double}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-          <p className="text-center text-4xl font-bold">$149</p>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-8">500 GB Storage</p>
-            <p className="py-2 border-b mx-8">1 Granted User</p>
-            <p className="py-2 border-b mx-8">Send up to 2 GB</p>
-          </div>
-          <button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 hover:scale-105 duration-300 ease-in-out">
-            Start Trial
-          </button>
-        </div>
-        <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem] bg-white"
-            src={Triple}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-          <p className="text-center text-4xl font-bold">$149</p>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-8">500 GB Storage</p>
-            <p className="py-2 border-b mx-8">1 Granted User</p>
-            <p className="py-2 border-b mx-8">Send up to 2 GB</p>
-          </div>
-          <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 hover:scale-105 duration-300 ease-in-out">
-            Start Trial
-          </button>
-        </div>
+    <div className="flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col items-center justify-center text-center lg:text-7xl text-2xl text-white mt-20">
+        Our Channels
       </div>
+      <div>
+        <Slider />
+      </div>
+      <div className="flex flex-col items-center justify-center text-center mt-10 text-white m-10">
+        <p className=" text-3xl lg:text-4xl mb-6 ">
+          Amazon Global SPN certified
+        </p>
+        <p className=" text-lg lg:text-2xl ">
+          At Socially Powerful, we have built a{" "}
+          <span className="text-emerald-400">global social</span> marketing
+          <span className="text-emerald-400"> agency</span>. Our social excels
+          in social marketing campaigns across, influencer marketing, paid
+          social and startegy, that engage global audiences.
+        </p>
+      </div>
+      <button className="bg-[#00df9a] w-[210px] text-xl lg:mr-10 rounded-md font-medium py-3 text-black hover:scale-105 duration-300 ease-in-out bg-opacity-80 mt-16">
+        Read More
+      </button>
     </div>
   );
 };

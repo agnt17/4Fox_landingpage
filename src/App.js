@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Newsletter from "./components/Newsletter";
 import OurWork from "./components/OurWork";
 import Insights from "./components/Insights";
+import Services from "./components/Services";
+import GetInTouch from "./components/GetInTouch";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
       <Analytics />
       <Cards />
       <OurWork />
+      <Services/>
       <Insights />
-      <Newsletter />
+      <GetInTouch/>
+      {/* <Newsletter /> */}
       <Footer />
     </div>
   );

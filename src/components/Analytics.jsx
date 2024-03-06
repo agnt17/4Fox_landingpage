@@ -4,25 +4,29 @@ import React from "react";
 const Analytics = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center text-center lg:text-4xl text-2xl text-white">
-        <div className="mb-4">Trusted Partners</div>
-        <div className="mb-4 text-4xl sm:text-4xl text-white">Icons</div>
-        <p className="text-white">
-          <span className="p-1 text-emerald-400 font-extralight">
+      <div className="flex flex-col items-center justify-center text-center lg:text-6xl text-3xl text-black">
+        <div className="mb-10 font-bold " id="trust">Trusted Partners</div>
+        <div className="mb-16 w-10 lg:w-40 flex flex-row justify-around items-center space-x-6 lg:space-x-20">
+          <img src="./dhl.png" alt="DHL" />
+          <img src="./lucria.png" alt="Lucria" />
+          <img src="./ping-pong.png" alt="Ping Pong" />
+          <img src="./meta-partner.png" alt="Meta Partner" />
+          <img src="./google-partner.png" alt="Google Partner" />
+          <img src="./shopify.png" alt="shopify Partner" />
+        </div>
+
+        <p className="text-black lg:text-4xl text-xl">
+          <span className="p-1 text-orange-400 lg:text-4xl text-xl">
             Who we are?
           </span>{" "}
           We are a global social media and influencer marketing agency
-          <span className="text-emerald-400  p-1 font-extralight">
-            powered by technology
-          </span>
+          <span className="text-orange-400 p-1">powered by technology</span>
         </p>
         <div className="text-xl">
           <p className="m-16">
             Socially Powerful, founded in 2017, stood as pioneers of the
             industry. Today, we are a global, award-winning leading social and{" "}
-            <span className="text-emerald-400 font-extralight">
-              influencer marketing
-            </span>{" "}
+            <span className="text-orange-400 ">influencer marketing</span>{" "}
             agency with offices in the UK, US, Europe and Middle-East.
           </p>
           <p className="m-16">
@@ -41,31 +45,44 @@ const Analytics = () => {
           </p>
           <p className="m-16">
             Welcome to Socially Powerful,{" "}
-            <span className="text-emerald-400 font-extralight">
+            <span className="text-orange-400 ">
               where attention meets guaranteed impact.
             </span>
           </p>
         </div>
-        <div className="flex flex-col  items-center lg:flex-row justify-around ">
-          <div className="bg-white p-4 rounded-xl shadow-md m-10 h-auto hover:bg-slate-200 cursor-pointer">
-            <h2 className=" text-teal-600 font-bold ">Forbes</h2>
+        <div className="flex flex-col items-center lg:flex-row gap-1 ">
+          <div className="bg-orange-400 p-10 rounded-xl shadow-2xl m-10 h-96 cursor-pointer hover:scale-110 transition-all ease-in-out duration-300 flex flex-col gap-10 border-2 border-black">
+            <h2 className=" text-white font-bold ">Forbes</h2>
             <p className="text-gray-700 mb-4 text-2xl">Feautred founders</p>
-            <img src="./f-logo.png" className="w-32 flex mx-auto" />
+            <img
+              src="./f-logo.png"
+              className="w-32 flex mx-auto bg-white rounded-xl p-3 shadow-2xl"
+            />
           </div>
-          <div className="bg-white p-4 rounded-xl shadow-md m-10 h-40">
-            <h2 className="text-teal-600 font-bold">Global</h2>
+          <div className="bg-orange-500 p-10 rounded-xl shadow-2xl m-10 h-96 cursor-pointer hover:scale-110 transition-all ease-in-out duration-300 flex flex-col gap-6 border-2 border-black">
+            <h2 className="text-white font-bold ">Global</h2>
             <p className="text-gray-700 mb-4 text-2xl">Award-Winning Agency</p>
+            <img
+              src="./global-awards-winner.png"
+              className="w-32 flex mx-auto bg-black rounded-2xl shadow-2xl"
+            />
           </div>
-          <div className="bg-white p-4 rounded-xl shadow-md m-10 h-40">
-            <h2 className="text-teal-600 font-bold">Creative</h2>
-            <p className="text-gray-700 mb-4">Award-Winning Agency</p>
+          <div className="bg-orange-400 p-10 rounded-xl shadow-2xl m-10 h-96 cursor-pointer hover:scale-110 transition-all ease-in-out duration-300 flex flex-col gap-6 border-2 border-black">
+            <h2 className="text-white font-bold">Creative</h2>
+            <p className="text-gray-700 mb-4 text-2xl">Award-Winning Agency</p>
+            <img
+              src="./creative-ideas.png"
+              className="w-52 h-32 flex mx-auto bg-black rounded-2xl p-4 shadow-2xl"
+            />
           </div>
         </div>
-        <button className="bg-[#00df9a] w-[210px] text-xl  lg:mr-10 rounded-md font-medium  py-3 text-black hover:scale-105 duration-300 ease-in-out bg-opacity-80 ">
+        <button className="bg-orange-600 w-[210px] text-xl  lg:mr-10 rounded-md font-medium  py-3 text-black hover:scale-105 duration-300 ease-in-out bg-opacity-80 mt-10">
           Read More
         </button>
       </div>
+      
     </>
+
   );
 };
 

@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="hidden sm:block w-52 ml-[-120px]">
           <img src="./fox-logo.png" alt="Fox Logo" />
         </div>
-        <div className="flex lg:flex-row text-xl mt-3  lg:gap-40  ">
+        <div className="flex lg:flex-row text-xl mt-3 gap-10  ">
           <div className="mb-2 lg:mb-0 hover:underline hover:text-white cursor-pointer">
             Home
           </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
+
 function News() {
     const [articles, setArticles] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,7 +10,7 @@ function News() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const apiKey = "6bd1c39bde88423aa7b41e8706aa2214";
+                const apiKey = process.env.REACT_APP_NEWS_API_KEY;
                 const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${apiKey}`;
                 const response = await axios.get(apiUrl);
                 setArticles(response.data.articles);

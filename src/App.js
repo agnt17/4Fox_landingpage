@@ -8,7 +8,7 @@ import OurWork from "./components/OurWork";
 import Insights from "./components/Insights";
 import Services from "./components/Services";
 import GetInTouch from "./components/GetInTouch";
-import News from "./components/News";
+
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <Insights />
       <GetInTouch/>
       <Footer />
-      {/* <News /> */}
+
 
     </div>
   );

@@ -1,9 +1,10 @@
 function GetInTouch() {
   return (
     <>
+      <hr className="w-5/6 border-b-4 flex items-center mx-auto mt-10 mb-10" />
       <div className="flex flex-col gap-10 mt-10 lg:m-1">
-        <h1 className="text-center text-5xl  font-semibold lg:text-9xl lg:font-bold  ">
-          GET IN <br /> TOUCH
+        <h1 className="text-center text-5xl  font-semibold lg:text-7xl lg:font-bold  text-extrabold">
+          GET IN TOUCH
         </h1>
 
         <p className="mx-10 lg:mx-auto text-center  max-w-4xl font-semibold  ">

@@ -15,7 +15,7 @@ function News() {
                 const response = await axios.get(apiUrl);
                 setArticles(response.data.articles);
             } catch (error) {
-                console.error('Error fetching news:', error);
+                console.error('Error in fetching news:', error);
             }
         }
 

@@ -4,11 +4,11 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Newsletter from "./components/Newsletter";
 import OurWork from "./components/OurWork";
 import Insights from "./components/Insights";
 import Services from "./components/Services";
 import GetInTouch from "./components/GetInTouch";
+import News from "./components/News";
 
 function App() {
   return (
@@ -21,8 +21,9 @@ function App() {
       <Services/>
       <Insights />
       <GetInTouch/>
-      {/* <Newsletter /> */}
       <Footer />
+      {/* <News /> */}
+
     </div>
   );
 }

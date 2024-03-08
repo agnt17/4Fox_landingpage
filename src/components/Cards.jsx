@@ -13,11 +13,18 @@ const Cards = () => {
       </div>
       <div className="flex flex-col items-center justify-center text-center mt-10 text-black m-10">
         <img src="./earth.png" className="w-96" />
+        <div className="flex flex-row m-10 gap-10 justify-around">
+          <img src="./UAE-flag.jpeg" className="w-9 lg:w-24" alt="UAE flag" />
+          <img src="./american-flag.png" className="w-9 lg:w-24" />
+          <img src="./indian-flag.jpeg" className="w-9 lg:w-24" />
+          <img src="./uk-image.jpeg" className="w-9 lg:w-24" />
+          <img src="./australia-flag.jpeg" className="w-9 lg:w-24" />
+        </div>
         <p className=" text-3xl lg:text-4xl mb-6 font-bold ">
           Amazon Global SPN certified
         </p>
 
-        <p className=" text-lg lg:text-2xl ">
+        <p className=" text-lg lg:text-2xl">
           At Socially Powerful, we have built a{" "}
           <span className="text-orange-400">global social</span> marketing
           <span className="text-orange-400"> agency</span>. Our social excels in

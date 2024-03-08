@@ -24,7 +24,7 @@ function Services() {
         </p>
         <p className="font-semibold">
           Socially Powerful caters to every aspect of your{" "}
-          <span className="text-orange-600">socal marketing strategy</span>,
+          <span className="text-orange-600">social marketing strategy</span>,
           meticulously tending to{" "}
           <span className="text-orange-600">paid social</span>, creative
           brilliance, captivating video production community management, and

@@ -6,23 +6,23 @@ function Services() {
           SERVICES
         </div>
 
-        <h3 className="font-bold text-center text-2xl mb-5">
+        <h3 className="font-bold text-center text-2xl m-5">
           Socially Powerful, a social marketing agency that ignites action and
           inspires meaningful connections for global brands.{" "}
         </h3>
-        <p className="font-semibold">
+        <p className="font-semibold m-6">
           Our social agency mission is clear: to create extraordinary,
           award-winning social marketing campaigns, comprehenisve engagement
           strategies, and captivating narratives that porpel global brands to
           new heights on social media.
         </p>
-        <p className="font-semibold">
+        <p className="font-semibold m-6">
           As a social marketing agency focused on results, we seamlessly extends
           your vision. From Instagram to TikTok, Twitch to YouTube, and Facebook
           to the next big platform, we navigate the ever-evolving social media
           landscape with finesse.
         </p>
-        <p className="font-semibold">
+        <p className="font-semibold m-6">
           Socially Powerful caters to every aspect of your{" "}
           <span className="text-orange-600">social marketing strategy</span>,
           meticulously tending to{" "}

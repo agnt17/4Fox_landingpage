@@ -5,7 +5,7 @@ const Cards = () => {
   // this page is dedicated to channels section
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <div className="flex flex-col items-center justify-center text-center lg:text-7xl text-2xl text-black mt-20">
+      <div className="flex flex-col items-center justify-center text-center lg:text-7xl text-2xl text-black mt-20 font-extrabold">
         Our Channels
       </div>
       <div>

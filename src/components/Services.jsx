@@ -1,7 +1,7 @@
 function Services() {
   return (
     <>
-      <div className=" flex flex-col gap-6 m-5 mx-13 mb-25 ">
+      <div id="services" className=" flex flex-col gap-6 m-5 mx-13 mb-25 ">
         <div className="font-extrabold flex flex-col items-center justify-center mx-auto text-6xl mb-5">
           SERVICES
         </div>

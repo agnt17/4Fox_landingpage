@@ -23,7 +23,6 @@ function App() {
       <GetInTouch/>
       <Footer />
 
-
     </div>
   );
 }

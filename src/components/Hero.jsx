@@ -3,44 +3,21 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-row justify-around items-center lg:items-start py-3 bg-gradient-to-l from-orange-300 via-orange-400 to-orange-600 rounded-md z-50">
-        <div className="hidden sm:block w-52 ml-[-120px]">
-          <img src="./fox-logo.png" alt="Fox Logo" />
-        </div>
-        <div className="flex lg:flex-row text-xl mt-3 gap-10  ">
-          <div className="mb-2 lg:mb-0 hover:underline hover:text-white cursor-pointer">
-            Home
-          </div>
-          <div className="mb-2 lg:mb-0 hover:underline hover:text-white cursor-pointer">
-            About
-          </div>
-
-          <div className="mb-2 lg:mb-0 hover:underline hover:text-white cursor-pointer">
-            Contact Us
-          </div>
-        </div>
-      </div>
-      <div className="lg:hidden flex mt-8 mx-auto w-4/6">
-        <img src="./fox-logo.png" alt="Fox Logo" />
-      </div>
-      <div className="max-w-[800px] mt-[-96px] w-full h-screen text-center flex flex-col justify-center items-center mx-auto">
-        <h1 className="w-full md:text-8xl sm:text-5xl text-3xl font-bold select-none">
+      <div className="w-full h-screen text-center flex flex-col justify-center items-center mx-auto" style={{ background: 'linear-gradient(to top, #ff4500, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8))' }}>
+        <h1 className="w-fit md:text-9xl sm:text-5xl text-6xl font-extrabold select-none">
           BUISNESS SOLUTIONS
         </h1>
         <div className="flex justify-center items-center pr-3">
-          <p className="md:text-3xl sm:text-2xl text-l font-bold py-4">
-            That Truly Inspires Growth
+          <p className="md:text-5xl sm:text-2xl text-l font-bold py-4">
+            THAT TRULY <span className="text-orange-500" >INSPIRING</span> GROWTH
           </p>
         </div>
-        <p className="md:text-2xl text-xl font-bold text-gray-500">
-          Manage your bookings easier and make your life easier.
-        </p>
         <div className="flex lg:flex-row flex-col">
-          <button className="bg-orange-600 w-[210px] text-xl mt-[3rem] lg:mr-10 rounded-md font-medium my-6 mx-auto py-3 text-black hover:scale-105 duration-300 ease-in-out">
+          <button className="bg-black mt-[3rem] lg:mr-10 my-6 mx-auto py-3 px-8 text-white hover:scale-105 duration-300 ease-in-out">
             Services
           </button>
-          <button className="bg-orange-600 w-[210px] text-xl mt-[3rem] rounded-md font-medium my-6 mx-auto py-3 text-black hover:scale-105 duration-300 ease-in-out">
-            Brief
+          <button className="mt-[3rem] lg:mr-10 my-6 mx-auto py-3 px-8 text-black border-2 border-black hover:scale-105 duration-300 ease-in-out">
+           SEND US A BRIEF
           </button>
         </div>
       </div>

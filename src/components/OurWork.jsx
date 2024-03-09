@@ -2,7 +2,7 @@ import React from "react";
 
 const OurWork = () => {
   return (
-    <div>
+    <div id="ourWork" >
       <p className="text-6xl text-black text-center mt-16 font-extrabold">
         SEE OUR WORK
       </p>

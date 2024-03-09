@@ -1,35 +1,45 @@
-import React, { useState, useEffect } from "react";
-// import './Slider.css'; // You may need to create a CSS file for styling
+import React, { useState, useEffect, useRef } from 'react';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 
-const Slider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
-  const images = [
-    "./f-logo.png",
-    "./f-logo.png",
-    "./f-logo.png",
-    "./f-logo.png",
-    "./f-logo.png",
-    "./f-logo.png",
-  ];
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  const closeSidebar = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
   };
 
   useEffect(() => {
-    const intervalId = setInterval(nextSlide, 3000);
-
-    return () => clearInterval(intervalId);
+    document.addEventListener('click', closeSidebar);
+    return () => document.removeEventListener('click', closeSidebar);
   }, []);
 
   return (
-    <div className=" flex flex-col lg:flex-row gap-10 justify-center items-center mt-16 ">
-      {images.map((image, index) => (
-        <img key={index} src="./OIP.jpeg" alt="image" className={"w-28"} />
-      ))}
-    </div>
+    <>
+      <button onClick={(e) => { toggleSidebar(); e.stopPropagation(); }} className=" text-black p-2  rounded-md m-4 fixed right-0">
+        {isOpen ? <CloseIcon /> : <MenuIcon />}
+      </button>
+      <div ref={sidebarRef} className={`fixed top-0 right-0 h-fit bg-white w-64 flex flex-col justify-between transition-all duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className="p-4">
+          <ul className="mt-4 mt-3">
+            <li className="py-2"><a href="#home">HOME</a></li>
+            <li className="py-2"><a href="#whyUs">WHY US</a></li>
+            <li className="py-2"><a href="#ourWork">OUR WORK</a></li>
+            <li className="py-2"><a href="#services">SERVICES</a></li>
+            <li className="py-2"><a href="#tech">INSIGHTS</a></li>
+            <li className="py-2 bg-orange-500 p-2 text-white"><a href="#tech">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </>
   );
 };
 
-export default Slider;
+export default Sidebar;

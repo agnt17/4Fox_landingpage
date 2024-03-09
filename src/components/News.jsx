@@ -66,7 +66,7 @@ function News() {
                   }`}
                 >
                   <img
-                    className="w-full"
+                    className="w-4/6"
                     src={article.urlToImage}
                     alt={article.title}
                   />
@@ -113,7 +113,7 @@ function News() {
                   }`}
                 >
                   <img
-                    className="w-fit"
+                    className="w-4/6"
                     src={article.urlToImage}
                     alt={article.title}
                   />

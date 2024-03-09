@@ -4,13 +4,16 @@ import News from "./News";
 const Insights = () => {
   return (
     <>
-      <div id="tech" className="bg-gray-200 hidden sm:block w-fit p-6 rounded-md m-5">
+      <div
+        id="tech"
+        className="bg-gray-200 hidden sm:block w-3/6 sm:w-5/6 rounded-md pt-5  mt-5 mx-auto"
+      >
         <div className="flex flex-col items-center justify-center text-center mt-10 text-black text-6xl lg:text-6xl font-bold">
           Latest Insights
         </div>
 
         <div className="flex flex-col items-center">
-          <p className="text-black text-3xl mt-20 font-bold w-[500px] text-center ">
+          <p className="text-black text-3xl mt-20 font-bold w-4/6 text-center ">
             <span className="bg-orange-500 w-fit text-white py-1 px-4 rounded-sm border-2 border-white flex flex-col items-center mx-auto text-2xl cursor-pointer">
               Latest Posts
             </span>{" "}
